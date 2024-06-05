@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/black" />
+    <item>
+        <bitmap
+            android:gravity="center_horizontal|bottom"
+            android:dither="true"
+            android:tileMode="disabled"
+            android:src="@drawable/zt_back"
+            android:scaleType="centerCrop"/>
+    </item>
+</layer-list>

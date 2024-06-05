@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4587f0</color>
+    <color name="colorPrimaryDark">#4587f0</color>
+    <color name="colorAccent">#4587f0</color>
+
+    <color name="home_status_bar">#1298ed</color>
+
+    <color name="et_line_bg">#d0d0d0</color>
+
+    <color name="title_bg">#4587f0</color>
+    <color name="title_wx">#EDEDED</color>
+    <color name="string_wx">#6C6C6C</color>
+    <color name="space_bg">#f2f3f6</color>
+
+    <color name="line">#f2f3f6</color>
+
+    <color name="bubble_color">#cccccc</color>
+
+    <color name="text_3">#333333</color>
+    <color name="text_6">#666666</color>
+    <color name="text_9">#999999</color>
+    <color name="text_80">#808080</color>
+    <color name="text_white">#ffffff</color>
+
+    <color name="text_white_50">#7fffffff</color>
+
+    <color name="text_theme">#4587f0</color>
+
+    <color name="white_50">#7fffffff</color>
+
+    <color name="black_50">#7f000000</color>
+
+    <color name="text_red">#D93F3C</color>
+
+    <color name="bottom_menu_checked">#4587f0</color>
+    <color name="bottom_menu_checked2">#05C160</color>
+    <color name="bottom_menu_unchecked">#999999</color>
+
+    <color name="list_divider">#f2f3f6</color>
+    <color name="menu_grey">#4C4C4C</color>
+
+    <color name="white_pressed">#ddffffff</color>
+    <color name="chatBackgroundColor">#F5F5F5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="transparent">#00000000</color>
+</resources>

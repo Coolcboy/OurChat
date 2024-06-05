@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- popup_menu_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/menu_grey">
+
+    <!-- 群聊 -->
+    <LinearLayout
+        android:id="@+id/onStartGroupChatClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="@dimen/size_5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_menu_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发起群聊"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 添加好友 -->
+    <LinearLayout
+        android:id="@+id/onStartFriendClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="@dimen/size_5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_menu_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 扫一扫 -->
+    <LinearLayout
+        android:id="@+id/onStartScanClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="@dimen/size_5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_menu_scan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫一扫"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 收付款 -->
+    <LinearLayout
+        android:id="@+id/onStartMoneyClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="@dimen/size_5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_menu_money" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收付款"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+

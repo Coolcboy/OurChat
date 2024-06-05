@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/chatBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/size_10dp"
+    android:paddingBottom="@dimen/size_10dp"
+    android:paddingLeft="@dimen/size_16dp"
+    android:paddingRight="@dimen/size_16dp">
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_9"
+        android:textSize="@dimen/size_14sp"
+        android:gravity="center_horizontal"
+        tools:text="11:26"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:src="@drawable/qq"
+        tools:src="@drawable/qq"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size_2dp"
+        android:layout_below="@+id/tvTime"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/line" />
+
+    <TextView
+        android:id="@+id/tvContent_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:layout_below="@+id/tvTime"
+        android:layout_toLeftOf="@+id/ivAvatar"
+        android:layout_marginLeft="@dimen/size_50dp"
+        android:layout_marginRight="@dimen/size_6dp"
+        android:textSize="@dimen/size_20sp"
+        android:textColor="@color/black"
+        android:text="@{data.msg}"
+        tools:text="我用双手成就你的梦想"
+        android:visibility="visible"
+        android:background="@drawable/zt_chat_bubble_right"/>
+
+
+    <ImageView
+        android:id="@+id/ivContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:minWidth="@dimen/size_100dp"
+        android:minHeight="@dimen/size_100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="400dp"
+        android:layout_below="@+id/tvTime"
+        android:layout_toLeftOf="@+id/ivAvatar"
+        android:layout_marginLeft="@dimen/size_50dp"
+        android:layout_marginRight="@dimen/size_6dp"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/size_16dp"
+        android:paddingRight="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:clipChildren="false"
+        android:background="@drawable/white_selector">
+
+        <!-- 替换为ImageView，并添加圆形背景shape -->
+        <ImageView
+            android:id="@+id/fiAvatar"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="@dimen/size_50dp"
+            android:src="@drawable/qq"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_shape"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/fiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_30sp"
+            android:textColor="@color/text_3"
+            android:text="@{data.showName}"
+            tools:text="亚索"
+            android:layout_marginLeft="@dimen/size_6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/fiAvatar"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

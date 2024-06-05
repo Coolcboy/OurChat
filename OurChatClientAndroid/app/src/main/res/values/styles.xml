@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HomeAppTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+    <style name="SplashAppTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:windowBackground">@drawable/splash_layer</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="WhiteAppTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/white_50</item>
+    </style>
+
+    <style name="OnClick">
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <!-- MeLogout Dialog主题 -->
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleWrapper</item>
+    </style>
+    <style name="BottomSheetStyleWrapper" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

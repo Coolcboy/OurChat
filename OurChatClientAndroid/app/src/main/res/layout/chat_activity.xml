@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/chat_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/chatBackgroundColor">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/space_bg"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/size_16dp"
+        android:paddingRight="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:background="@drawable/white_layer">
+        <ImageView
+            android:id="@+id/ztSound"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:src="@drawable/page_sound"
+            android:layout_marginRight="@dimen/size_6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/etContent"
+            style="@style/OnClick"/>
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_50dp"
+            android:singleLine="true"
+            android:padding="@dimen/size_6dp"
+            android:background="@drawable/edit_bg_line_selector"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/ztSound"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ztEmoji"/>
+
+        <ImageView
+            android:id="@+id/ztEmoji"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:src="@drawable/page_ej"
+            android:layout_marginLeft="@dimen/size_6dp"
+
+            app:layout_constraintLeft_toRightOf="@+id/etContent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvSend"
+            style="@style/OnClick"/>
+
+        <TextView
+            android:id="@+id/tvSend"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_40dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingTop="@dimen/size_4dp"
+            android:paddingBottom="@dimen/size_4dp"
+            android:paddingLeft="@dimen/size_17dp"
+            android:paddingRight="@dimen/size_17dp"
+            android:layout_marginLeft="@dimen/size_6dp"
+            android:background="@drawable/btn_bg_selector"
+            app:layout_constraintLeft_toRightOf="@+id/ztEmoji"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            style="@style/OnClick" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+

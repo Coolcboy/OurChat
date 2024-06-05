@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- 输入朋友账号的EditText -->
+        <EditText
+            android:id="@+id/etFriendAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入朋友账号"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:imeOptions="actionNext"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <!-- 添加朋友的Button -->
+        <Button
+            android:id="@+id/btnAddFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加朋友"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:minWidth="150dp"/>
+    </LinearLayout>
+
+</LinearLayout>

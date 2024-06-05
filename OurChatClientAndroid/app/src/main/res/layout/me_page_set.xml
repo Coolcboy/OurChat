@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/title_wx">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <TextView
+        android:id="@+id/ztSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_selector"
+        android:paddingLeft="@dimen/size_16dp"
+        android:paddingRight="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_12dp"
+        android:paddingBottom="@dimen/size_12dp"
+        android:gravity="center"
+        android:text="@string/switch_account"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/size_26sp"
+        android:drawablePadding="@dimen/size_6dp"
+        android:layout_marginTop="@dimen/size_15dp"/>
+
+    <TextView
+        android:id="@+id/ztLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_selector"
+        android:paddingLeft="@dimen/size_16dp"
+        android:paddingRight="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_12dp"
+        android:paddingBottom="@dimen/size_12dp"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/size_26sp"
+        android:drawablePadding="@dimen/size_6dp"
+        android:layout_marginTop="@dimen/size_15dp"/>
+
+</LinearLayout>

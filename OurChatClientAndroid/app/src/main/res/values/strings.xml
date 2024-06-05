@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">OurChat</string>
+
+
+    <!-- Home -->
+    <string name="menu_message">消息</string>
+    <string name="menu_friend">好友</string>
+    <string name="menu_group">群组</string>
+    <string name="menu_me">我的</string>
+
+    <!-- Login -->
+    <string name="login">登录</string>
+    <string name="register_l">登录/注册</string>
+    <string name="hint_account">账号</string>
+    <string name="hint_account_t">账号登录</string>
+    <string name="hint_username">用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_confirm_password">确认密码</string>
+
+    <string name="hint_old_password">旧密码</string>
+    <string name="hint_new_password">新密码</string>
+    <string name="hint_confirm_new_password">确认新密码</string>
+
+    <string name="create_group">创建群</string>
+    <string name="hint_group_name">群名称</string>
+    <string name="tips_group_name">请输入群名称</string>
+
+    <string name="modify">修改</string>
+    <string name="submit">提交</string>
+
+    <string name="forgot_password">忘记密码</string>
+
+    <string name="tips_username_is_empty">请输入用户名</string>
+    <string name="tips_password_is_empty">请输入密码</string>
+    <string name="tips_confirm_password_is_empty">请输入确认密码</string>
+    <string name="tips_old_password_is_empty">请输入旧密码</string>
+    <string name="tips_new_password_is_empty">请输入新密码</string>
+    <string name="tips_confirm_new_password_is_empty">请再次输入新密码</string>
+    <string name="tips_password_is_different">两次密码不一致</string>
+
+    <string name="tips_password_matcher">密码至少包括6个字符，必须由字母、数字组成。</string>
+
+    <string name="remark_name">备注</string>
+
+    <string name="tips_nickname_is_empty">请输入昵称</string>
+    <string name="tips_signature_is_empty">请输入个性签名</string>
+
+    <string name="tips_change_nickname">好的昵称能让你朋友更容易记住你</string>
+    <string name="tips_change_signature">有签名才个性</string>
+    <string name="tips_change_remark">修改好友备注名称</string>
+
+    <string name="label_exist_account">已有账户，</string>
+    <string name="login_now">立即登录</string>
+
+    <string name="register_u"><u>注册</u></string>
+    <string name="register">注册</string>
+    <string name="register_now">立即注册</string>
+    <string name="register_return">返回登录</string>
+
+    <string name="switch_account">切换账号</string>
+    <string name="logout">退出登录</string>
+
+    <string name="tips_logout">您确定要退出登录？</string>
+
+    <string name="confirm">确定</string>
+
+    <!-- success -->
+    <string name="success_login">登录成功</string>
+    <string name="success_register">注册成功</string>
+    <string name="success_modify">修改成功</string>
+    <string name="success_create">创建成功</string>
+
+    <!-- Error -->
+    <string name="result_connect_failed_error">服务器连接失败，请稍后再试。</string>
+    <string name="result_connect_timeout_error">服务器连接超时，请稍后再试。</string>
+    <string name="result_empty_error">系统繁忙，请稍后再试。</string>
+    <string name="result_network_unavailable_error">网络不给力，请检查网络。</string>
+
+    <string name="result_failure">获取失败</string>
+
+    <string name="success_operator">操作成功</string>
+    <string name="operator_failed">操作失败，请稍后再试</string>
+
+    <!-- Chat -->
+    <string name="send">发送</string>
+
+    <!-- Me -->
+    <string name="modify_password">修改密码</string>
+    <string name="about">关于</string>
+    <string name="check_version">版本检测</string>
+    <string name="set">设置</string>
+
+    <string name="tips_latest_version">已是最新版本</string>
+
+    <!-- User information -->
+    <string name="user_info_title">个人信息</string>
+    <string name="avatar">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="username">用户名</string>
+    <string name="signature">个性签名</string>
+    <string name="qrcode">二维码</string>
+
+    <string name="group_name">群名称</string>
+    <string name="group_id">群ID</string>
+    <string name="group_member">群成员</string>
+
+    <string name="add_friend">添加好友</string>
+    <string name="invite_group">申请加群</string>
+
+    <string name="tips_add_friend_">"用户[%1$s]向您发送了好友申请？"</string>
+    <string name="tips_invite_group_">"ID为[%1$s]的用户邀请您加入群[%2$s]？"</string>
+    <string name="tips_apply_group_">"用户[%1$s]申请加入群[%2$s]？"</string>
+    <string name="accept">接受</string>
+    <string name="agree">同意</string>
+    <string name="ignore">忽略</string>
+
+    <string name="delete">删除</string>
+
+    <string name="scan_code_title">扫码</string>
+    <string name="tips_user_qrcode">扫一扫上面的二维码，添加我为好友</string>
+    <string name="tips_group_qrcode">扫一扫上面的二维码，申请加群</string>
+
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+
+    <!-- Search -->
+    <string name="hint_search">搜索用户或群</string>
+    <string name="tips_search_key_is_empty">请输入搜索内容</string>
+
+    <string name="tips_default_new_version">发现新版本，是否更新？</string>
+    <string name="update_now">更新</string>
+
+    <!-- About -->
+    <string name="menu_github">GitHub</string>
+    <string name="menu_source">开源地址</string>
+    <string name="menu_issue">提Issue</string>
+    <string name="menu_email">发E-mail</string>
+    <string name="menu_qq_group">加入QQ群</string>
+
+    <string name="tips_join_qq_group_exception">未安装手Q或安装的版本不支持</string>
+    <string name="author_qq">作者qq：2875824299</string>
+
+
+    <string name="account_label">账号: %1$s</string>
+
+</resources>

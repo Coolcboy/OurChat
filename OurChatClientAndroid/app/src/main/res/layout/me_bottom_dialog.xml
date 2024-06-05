@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:background="@color/title_wx">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:background="@color/white"
+        android:onClick="onLogoutClick"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerHorizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭微信"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:background="@color/white"
+        android:onClick="onCloseAppClick"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/dividerHorizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:background="@color/white"
+        android:onClick="onCancelClick"/>
+
+</LinearLayout>

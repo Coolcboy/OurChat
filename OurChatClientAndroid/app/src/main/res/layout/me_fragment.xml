@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_wx">
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_16dp"
+                android:paddingRight="@dimen/size_16dp"
+                android:paddingTop="@dimen/size_50dp"
+                android:paddingBottom="@dimen/size_20dp"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:src="@drawable/qq"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_shape"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:ignore="MissingClass" />
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_30sp"
+                    android:textColor="@color/black"
+                    android:text="亚索"
+                    tools:text="亚索"
+                    android:layout_marginTop="@dimen/size_6dp"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tvSignature"
+                    app:layout_constraintLeft_toRightOf="@+id/ivAvatar"/>
+                <TextView
+                    android:id="@+id/tvSignature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_18sp"
+                    android:textColor="@color/text_6"
+                    android:text="账号：123456"
+                    android:singleLine="true"
+                    tools:text="账号：123456"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvName"
+                    app:layout_constraintLeft_toRightOf="@+id/ivAvatar"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/ztSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_selector"
+                android:paddingLeft="@dimen/size_16dp"
+                android:paddingRight="@dimen/size_16dp"
+                android:paddingTop="@dimen/size_12dp"
+                android:paddingBottom="@dimen/size_12dp"
+                android:gravity="center_vertical"
+                android:text="@string/set"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/size_16sp"
+                android:drawableLeft="@drawable/zt_set"
+                android:drawablePadding="@dimen/size_6dp"
+                android:drawableRight="@drawable/ec_next"
+                android:layout_marginTop="@dimen/size_15dp"/>
+
+            <TextView
+                android:id="@+id/ztIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_selector"
+                android:paddingLeft="@dimen/size_16dp"
+                android:paddingRight="@dimen/size_16dp"
+                android:paddingTop="@dimen/size_12dp"
+                android:paddingBottom="@dimen/size_12dp"
+                android:gravity="center_vertical"
+                android:text="@string/about"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/size_16sp"
+                android:drawableLeft="@drawable/zt_about"
+                android:drawablePadding="@dimen/size_6dp"
+                android:drawableRight="@drawable/ec_next"
+                android:layout_marginTop="@dimen/size_15dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
