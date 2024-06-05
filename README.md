@@ -6,3 +6,5 @@
 Java 17,Spring Boot(v3.3.0),MySQL 5.7.29
 
 安卓：Gradle Plugin Version:8.3.1, Gradle 8.4
+
+上传时出错了，文件都在master上。
